@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package userguide.loggingmodule;
+package samples.quickstart.module.logging;
 
 import org.apache.axis2.AxisFault;
 import org.apache.axis2.context.MessageContext;
