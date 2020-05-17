@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StockQuoteService {
-    private Map<String, Double> map = new HashMap<String, Double>();
+    private static Map<String, Double> map = new HashMap<String, Double>();
 
     public double getPrice(String symbol) {
         Double price = (Double) map.get(symbol);
@@ -32,7 +32,8 @@ public class StockQuoteService {
         return 42.00;
     }
 
-    public void update(String symbol, double price) {
+    public String update(String symbol, double price) {
         map.put(symbol, new Double(price));
+        return "Updated price";
     }
 }
