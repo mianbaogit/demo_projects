@@ -18,7 +18,7 @@
  */
 
 
-package samples.quickstart.module.logging;
+package userguide.loggingmodule;
 
 import org.apache.axis2.AxisFault;
 import org.apache.axis2.context.ConfigurationContext;
